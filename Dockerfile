@@ -1,6 +1,6 @@
 FROM  alpine:3.14
 MAINTAINER rk19mandal@gmail.com
-RUN yum install -y httpd \
+RUN apk install -y httpd \
      zip\
      unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/atema.zip /var/www/html/
