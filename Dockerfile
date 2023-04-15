@@ -1,6 +1,6 @@
-FROM  ubuntu:20.04
+FROM centos:7
 MAINTAINER rk19mandal@gmail.com
-RUN apt-get install -y apache2 \
+RUN yum install -y httpd \
      zip\
      unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/atema.zip /var/www/html/
