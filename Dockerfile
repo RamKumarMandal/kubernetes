@@ -1,6 +1,6 @@
-FROM  alpine:3.14
+FROM  ubuntu:20.04
 MAINTAINER rk19mandal@gmail.com
-RUN apk install -y httpd \
+RUN apt-get install -y httpd \
      zip\
      unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/atema.zip /var/www/html/
