@@ -1,4 +1,4 @@
-FROM  centos:latest
+FROM  alpine:3.14
 MAINTAINER rk19mandal@gmail.com
 RUN yum install -y httpd \
      zip\
