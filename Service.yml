@@ -1,0 +1,16 @@
+kind: service
+apiVersion: v1
+metadata:
+  name: rammandal
+  labels:
+   app: rammandal
+spec:
+  ports:
+  - port: 8080
+    targetPort: 80
+    nodePort: 31200
+  selector:
+    app: rammandal
+  type: loadBalancer
+  
+
