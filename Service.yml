@@ -6,11 +6,11 @@ metadata:
    app: rammandal
 spec:
   ports:
-  - port: 8080
-    targetPort: 80
-    nodePort: 31200
+   - port: 8080
+     targetPort: 80
+     nodePort: 31200
   selector:
     app: rammandal
-  type: loadBalancer
+  type: LoadBalancer
   
 
