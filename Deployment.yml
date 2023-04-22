@@ -1,23 +1,25 @@
+---
 kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: rammandal
-spec: 
+spec:
   replicas: 2
   selector:
-   matchLabels:
-    app: rammandal
+    matchLabels:
+      app: rammandal
   template:
-   metadata:
-    labels:
-     app: rammandal
-   specs:
-    containers:
-     - name: rammandal
-       image: rammandal/pipeline-demo
-       imagePullPolicy: Always
-       ports:
-       - containerPort: 80
+    metadata:
+      labels:
+        app: rammandal
+    specs:
+      containers:
+        - name: rammandal
+          image: rammandal/pipeline-demo
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+
 
  
  
