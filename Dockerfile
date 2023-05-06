@@ -9,4 +9,4 @@ RUN unzip atema.zip
 RUN cp -rvf html/* .
 RUN rm -rf html atema.zip
 CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
-EXPOSE 80 22 
+EXPOSE 80
